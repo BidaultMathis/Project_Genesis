@@ -13,7 +13,7 @@ namespace Gestion_Ticket.Login
         public int estConnecteM       { get; set; }
         public string Motdepasse      { get; set; }
 
-        public static string connectionString = "server=sl-eu-gb-p00.dblayer.com;Port=17327; userid=admin; password=7cf2409d326db0c197844dce15f3aee5c9dc8fa265b7a60d38de; database=Tickets";
+        public static string connectionString = "***";
 
         private void CheckGrade()
         {
