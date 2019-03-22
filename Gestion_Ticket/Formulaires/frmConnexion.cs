@@ -60,7 +60,9 @@ namespace Gestion_Ticket
 
         private void BgwLogin_DoWork(object sender, DoWorkEventArgs e)
         {
-            login.Connexion(textBoxUser, textBoxPass);
+            login.idUserM = textBoxUser.Text;
+            login.Motdepasse = textBoxPass.Text;
+            login.Connexion();
         }
 
         private void linkOubliMdp_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

@@ -39,7 +39,7 @@ namespace Gestion_Ticket.Login
         }
 
 
-        public void Connexion(TextBox username, TextBox password)
+        public void Connexion()
         {
             try
             {
@@ -53,8 +53,8 @@ namespace Gestion_Ticket.Login
                     {
                         _cmd.Parameters.Add(new MySqlParameter("@user", MySqlDbType.VarChar));
                         _cmd.Parameters.Add(new MySqlParameter("@pass", MySqlDbType.VarChar));
-                        _cmd.Parameters["@user"].Value = username.Text;
-                        _cmd.Parameters["@pass"].Value = password.Text;
+                        _cmd.Parameters["@user"].Value = idUserM;
+                        _cmd.Parameters["@pass"].Value = Motdepasse;
 
                         using (MySqlDataReader _result = _cmd.ExecuteReader())
                         {
