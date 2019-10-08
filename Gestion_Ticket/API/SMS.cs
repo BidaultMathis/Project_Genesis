@@ -31,7 +31,7 @@ namespace Gestion_Ticket.API
             {
                 byte[] reponse = _webClient.UploadValues("https://api.txtlocal.com/send/", new NameValueCollection()
                 {
-                {"apikey" , "hIobzpijaX8-miGqEiWtNLKVW1T74G1gFERmVxJhmT"},
+                {"apikey" , "****"},
                 {"numbers" , numero},
                 {"message" , messageEncode},
                 {"sender" , "Genesis"}
